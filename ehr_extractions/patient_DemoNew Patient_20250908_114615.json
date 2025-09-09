@@ -1,0 +1,27 @@
+{
+  "patient_id": "DemoNew Patient",
+  "extraction_timestamp": "2025-09-08T11:41:46.484109",
+  "icd10_diagnoses": [
+    {
+      "icd10_code": "E11.9",
+      "description": "Type 2 diabetes mellitus without complications",
+      "status": "Undefined",
+      "date": ""
+    }
+  ],
+  "active_medications": [
+    {
+      "name": "Insulin Aspart",
+      "dosage": "100 UNIT/ML",
+      "frequency": "",
+      "route": "Injection",
+      "status": "Active",
+      "prescriber": ""
+    }
+  ],
+  "extraction_status": "success",
+  "metadata": {
+    "computer_type": "local-playwright",
+    "debug_mode": true
+  }
+}

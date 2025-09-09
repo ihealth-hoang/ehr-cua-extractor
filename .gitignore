@@ -1,0 +1,17 @@
+.venv/
+.env
+__pycache__/
+*.pyc
+*.log
+*.png
+*.jpg
+screenshots*/
+data/
+storageState.json
+
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
