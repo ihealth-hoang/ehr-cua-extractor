@@ -4,14 +4,14 @@ A Python application that uses OpenAI's Computer-Use API to autonomously extract
 
 **Built on OpenAI CUA Sample App Architecture** - Follows established patterns and best practices from the official OpenAI Computer-Use Agent sample application.
 
-## 🎯 What It Does
+## Functionality
 
 - **Autonomous EHR Navigation**: Uses AI computer vision to navigate Practice Fusion
 - **Medical Data Extraction**: Extracts ICD-10 diagnoses and medication information  
 - **HIPAA-Aware Safety**: Built-in safety checks for patient data handling
 - **Structured Output**: Clean JSON data output saved to `ehr_extractions/`
 
-## 🚀 Quick Start
+## How to Start
 
 ### 1. Prerequisites
 - Python 3.11+
@@ -50,7 +50,7 @@ python ehr_cua_extractor.py --patient-id 12345 --debug
 # Results saved to: ehr_extractions/patient_12345_TIMESTAMP.json
 ```
 
-## 📋 Command Options
+## Full CLI
 
 ```bash
 python ehr_cua_extractor.py --patient-id PATIENT_ID [--debug] [--computer TYPE]
@@ -60,8 +60,9 @@ python ehr_cua_extractor.py --patient-id PATIENT_ID [--debug] [--computer TYPE]
 - `--patient-id` - Patient name to extract (required)
 - `--debug` - Enable debug mode
 - `--computer` - Browser type: `local-playwright`, `browserbase`, `scrapybara`
+    - not required, default set to playwright
 
-## 📁 Output
+## Output
 
 Results are saved as JSON files in `ehr_extractions/`:
 
@@ -86,12 +87,5 @@ Results are saved as JSON files in `ehr_extractions/`:
     }
   ]
 }
-```
-
-## 🔧 Testing
-
-```bash
-# Test the setup
-python test_extractor.py
 ```
 
